@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Landing Pages for $40 | Launch Your Business Online Today</title>
+    <meta name="description" content="Get a stunning, mobile-ready landing page designed by experts for just $40. Trusted by 200+ businesses. Money-back guarantee. Limited spots available.">
+    <meta name="keywords" content="landing page design, affordable web design, small business website, professional landing page, $40 landing page, business website design">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Professional Landing Pages for $40 | Launch Your Business Online Today">
+    <meta property="og:description" content="Get a stunning, mobile-ready landing page designed by experts for just $40. Trusted by 200+ businesses. Money-back guarantee.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+    <meta property="og:site_name" content="ProPage Design">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Landing Pages for $40">
+    <meta name="twitter:description" content="Get a stunning, mobile-ready landing page designed by experts for just $40. Money-back guarantee.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/img/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ProPage Design",
+        "description": "Professional landing page design services for small businesses",
+        "priceRange": "$40",
+        "url": "https://yourdomain.com",
+        "email": "hello@yourdomain.com",
+        "sameAs": [],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Landing Page Design Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Professional Landing Page Design",
+                        "description": "Custom-designed, mobile-ready landing page with fast turnaround"
+                    },
+                    "price": "40.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ========== CSS RESET & BASE ========== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: rgba(255,255,255,0.03);
+            --bg-glass: rgba(255,255,255,0.05);
+            --border-glass: rgba(255,255,255,0.08);
+            --text-primary: #f5f5f7;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-red: #ef4444;
+            --accent-red-hover: #dc2626;
+            --accent-red-glow: rgba(239,68,68,0.3);
+            --accent-gradient: linear-gradient(135deg, #ef4444, #f97316);
+            --accent-gradient-2: linear-gradient(135deg, #dc2626, #b91c1c);
+            --success: #22c55e;
+            --gold: #f59e0b;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+            --max-width: 1200px;
+            --section-pad: clamp(3rem, 8vw, 6rem);
+        }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font-family: inherit; cursor: pointer; border: none; outline: none; }
+
+        /* ========== UTILITY ========== */
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px var(--accent-red-glow); }
+            50% { box-shadow: 0 0 40px var(--accent-red-glow), 0 0 80px rgba(239,68,68,0.15); }
+        }
+        @keyframes countdownPulse {
+            0%, 100% { transform: scale(1); color: var(--accent-red); }
+            50% { transform: scale(1.15); color: #ff6b6b; }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .fade-in-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-in-left.visible { opacity: 1; transform: translateX(0); }
+        .fade-in-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-in-right.visible { opacity: 1; transform: translateX(0); }
+
+        /* ========== ANNOUNCEMENT BAR ========== */
+        .announcement-bar {
+            background: var(--accent-gradient);
+            padding: 0.6rem 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            position: relative;
+            z-index: 100;
+        }
+        .announcement-bar span { display: inline-flex; align-items: center; gap: 0.5rem; }
+        .announcement-bar .pulse-dot {
+            width: 8px; height: 8px; background: #fff; border-radius: 50%;
+            display: inline-block; animation: pulse 1.5s infinite;
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar {
+            position: sticky; top: 0; z-index: 99;
+            background: rgba(10,10,15,0.85);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 0.9rem 0;
+            transition: background 0.3s ease;
+        }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.4rem; font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .logo span { -webkit-text-fill-color: var(--text-primary); }
+        .nav-cta {
+            background: var(--accent-gradient);
+            color: #fff; font-weight: 600; font-size: 0.85rem;
+            padding: 0.55rem 1.4rem; border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px var(--accent-red-glow); }
+
+        /* ========== HERO ========== */
+        .hero {
+            padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 6vw, 4rem);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; top: -50%; left: -20%; width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(239,68,68,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute; bottom: -30%; right: -15%; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 1; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        @media (min-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr 1fr; }
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 100px;
+            padding: 0.4rem 1rem;
+            font-size: 0.8rem; font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            animation: fadeUp 0.6s ease both;
+        }
+        .hero-badge .badge-dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; }
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeUp 0.6s ease 0.1s both;
+        }
+        .hero-title .highlight {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-title .strikethrough {
+            position: relative;
+            -webkit-text-fill-color: var(--text-muted);
+            font-size: 0.65em;
+        }
+        .hero-title .strikethrough::after {
+            content: '';
+            position: absolute; left: 0; top: 55%; width: 100%; height: 3px;
+            background: var(--accent-red);
+            transform: rotate(-3deg);
+        }
+        .hero-sub {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            animation: fadeUp 0.6s ease 0.2s both;
+        }
+        .hero-ctas {
+            display: flex; flex-wrap: wrap; gap: 1rem;
+            margin-bottom: 2rem;
+            animation: fadeUp 0.6s ease 0.3s both;
+        }
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 1rem 2.2rem;
+            border-radius: 12px;
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: glow 3s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+        .btn-primary:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 40px var(--accent-red-glow); }
+        .btn-primary span { position: relative; z-index: 1; }
+        .btn-secondary {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 1rem 1.8rem;
+            border-radius: 12px;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+        .hero-social-proof {
+            display: flex; flex-wrap: wrap; gap: 1.5rem;
+            animation: fadeUp 0.6s ease 0.4s both;
+        }
+        .proof-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); }
+        .proof-item .icon { font-size: 1.1rem; }
+        .proof-item strong { color: var(--text-primary); font-weight: 700; }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+            animation: fadeUp 0.8s ease 0.3s both;
+        }
+        .hero-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        .hero-card-img {
+            width: 100%; aspect-ratio: 16/10; object-fit: cover;
+            border-radius: 12px;
+            background: var(--bg-secondary);
+        }
+        .hero-card-bar {
+            display: flex; gap: 0.5rem; margin-top: 1rem;
+        }
+        .hero-card-bar span {
+            flex: 1; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08);
+        }
+        .hero-card-bar span:first-child { background: var(--accent-gradient); flex: 2; }
+        .floating-badge {
+            position: absolute; top: -15px; right: -10px;
+            background: var(--accent-gradient);
+            color: #fff; font-weight: 700; font-size: 0.85rem;
+            padding: 0.6rem 1rem; border-radius: 12px;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 8px 30px var(--accent-red-glow);
+        }
+        .floating-badge-2 {
+            position: absolute; bottom: 20px; left: -20px;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(10px);
+            color: var(--text-primary); font-weight: 600; font-size: 0.8rem;
+            padding: 0.6rem 1rem; border-radius: 12px;
+            animation: float 3s ease-in-out 1s infinite;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .floating-badge-2 .check { color: var(--success); }
+
+        /* ========== URGENCY BAR ========== */
+        .urgency-bar {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-glass);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 1.5rem 0;
+        }
+        .urgency-inner {
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+            gap: 2rem;
+        }
+        .urgency-timer {
+            display: flex; gap: 0.75rem; align-items: center;
+        }
+        .timer-block {
+            text-align: center;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 10px;
+            padding: 0.6rem 0.9rem;
+            min-width: 60px;
+        }
+        .timer-block .num {
+            font-family: var(--font-heading);
+            font-size: 1.5rem; font-weight: 700;
+            color: var(--accent-red);
+            display: block;
+            line-height: 1;
+        }
+        .timer-block .label {
+            font-size: 0.65rem; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.05em;
+            margin-top: 0.2rem;
+        }
+        .urgency-text {
+            font-size: 0.95rem; color: var(--text-secondary);
+        }
+        .urgency-text strong { color: var(--accent-red); font-weight: 700; }
+        .spots-left {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: rgba(239,68,68,0.1);
+            border: 1px solid rgba(239,68,68,0.2);
+            border-radius: 100px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem; font-weight: 600;
+            color: var(--accent-red);
+        }
+
+        /* ========== SOCIAL PROOF COUNTER ========== */
+        .social-counter {
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-glass);
+        }
+        .counter-row {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem;
+        }
+        .counter-item { text-align: center; }
+        .counter-num {
+            font-family: var(--font-heading);
+            font-size: 2rem; font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .counter-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+        /* ========== SECTION COMMON ========== */
+        section { padding: var(--section-pad) 0; }
+        .section-tag {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.75rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--accent-red);
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+        .section-sub {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header .section-sub { margin: 0 auto; }
+
+        /* ========== WHAT YOU GET ========== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .feature-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: var(--accent-gradient);
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .feature-card:hover { border-color: rgba(239,68,68,0.2); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .feature-card:hover::before { opacity: 1; }
+        .feature-icon {
+            width: 48px; height: 48px;
+            background: rgba(239,68,68,0.1);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+        .feature-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem; font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+        .feature-card p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+
+        /* ========== HOW IT WORKS ========== */
+        .steps-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .steps-container { grid-template-columns: repeat(3, 1fr); }
+        }
+        .step-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+        }
+        .step-number {
+            width: 56px; height: 56px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 1.3rem; font-weight: 700;
+            color: #fff;
+            margin: 0 auto 1.2rem;
+            box-shadow: 0 4px 20px var(--accent-red-glow);
+        }
+        .step-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem; font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+        .step-card p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+        .step-connector {
+            display: none;
+            position: absolute; top: 48px; right: -20px;
+            color: var(--text-muted); font-size: 1.2rem;
+        }
+        @media (min-width: 768px) {
+            .step-connector { display: block; }
+        }
+
+        /* ========== TEMPLATE PREVIEWS ========== */
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .template-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .template-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+        .template-img-wrap {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+        }
+        .template-img-wrap img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .template-card:hover .template-img-wrap img { transform: scale(1.05); }
+        .template-tag {
+            position: absolute; top: 12px; left: 12px;
+            background: var(--accent-gradient);
+            color: #fff; font-size: 0.7rem; font-weight: 700;
+            padding: 0.25rem 0.7rem; border-radius: 6px;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .template-info { padding: 1.2rem 1.5rem; }
+        .template-info h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+        .template-info p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        /* ========== PRICING ========== */
+        .pricing-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-glass);
+            border-bottom: 1px solid var(--border-glass);
+        }
+        .pricing-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--bg-glass);
+            border: 2px solid rgba(239,68,68,0.3);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: var(--accent-gradient);
+        }
+        .pricing-ribbon {
+            position: absolute; top: 20px; right: -30px;
+            background: var(--accent-gradient);
+            color: #fff; font-size: 0.7rem; font-weight: 700;
+            padding: 0.3rem 2.5rem;
+            transform: rotate(45deg);
+            text-transform: uppercase;
+        }
+        .pricing-label {
+            font-size: 0.85rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--accent-red);
+            margin-bottom: 0.5rem;
+        }
+        .pricing-was {
+            font-size: 1.2rem; color: var(--text-muted);
+            text-decoration: line-through;
+            margin-bottom: 0.3rem;
+        }
+        .pricing-now {
+            font-family: var(--font-heading);
+            font-size: 4rem; font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+        }
+        .pricing-now .currency { font-size: 1.5rem; vertical-align: top; margin-right: 0.1rem; }
+        .pricing-today { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        .pricing-features {
+            list-style: none; text-align: left;
+            margin-bottom: 2rem;
+        }
+        .pricing-features li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--border-glass);
+            font-size: 0.95rem;
+            display: flex; align-items: center; gap: 0.7rem;
+        }
+        .pricing-features li .check { color: var(--success); font-size: 1.1rem; }
+        .guarantee-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.2);
+            border-radius: 100px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem; font-weight: 600;
+            color: var(--success);
+            margin-top: 1.5rem;
+        }
+
+        /* ========== ORDER FORM ========== */
+        .order-section { background: var(--bg-primary); }
+        .order-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+        .form-group { margin-bottom: 1.2rem; }
+        .form-group label {
+            display: block; font-size: 0.85rem; font-weight: 600;
+            margin-bottom: 0.4rem; color: var(--text-secondary);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border-glass);
+            border-radius: 10px;
+            padding: 0.8rem 1rem;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-red);
+        }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-group select option { background: var(--bg-secondary); color: var(--text-primary); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+        #paypal-button-container { margin-top: 1.5rem; min-height: 50px; }
+        .form-note {
+            text-align: center; font-size: 0.8rem; color: var(--text-muted);
+            margin-top: 1rem;
+        }
+        .form-note .lock-icon { margin-right: 0.3rem; }
+        .confirmation-message {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        .confirmation-message .success-icon {
+            font-size: 3rem; margin-bottom: 1rem;
+        }
+        .confirmation-message h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem; margin-bottom: 0.5rem;
+        }
+        .confirmation-message p { color: var(--text-secondary); }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '\201C';
+            font-size: 4rem; line-height: 1;
+            color: rgba(239,68,68,0.2);
+            position: absolute; top: 10px; left: 20px;
+            font-family: Georgia, serif;
+        }
+        .testimonial-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 0.8rem; letter-spacing: 2px; }
+        .testimonial-text {
+            font-size: 0.95rem; color: var(--text-secondary);
+            line-height: 1.7; margin-bottom: 1.2rem;
+            font-style: italic;
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 0.8rem; }
+        .testimonial-avatar {
+            width: 42px; height: 42px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9rem; color: #fff;
+        }
+        .testimonial-name { font-weight: 600; font-size: 0.9rem; }
+        .testimonial-role { font-size: 0.8rem; color: var(--text-muted); }
+        .testimonial-result {
+            display: inline-block;
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.2);
+            border-radius: 6px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.75rem; font-weight: 600;
+            color: var(--success);
+            margin-top: 0.5rem;
+        }
+
+        /* ========== FAQ ========== */
+        .faq-list { max-width: 700px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid var(--border-glass);
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            color: var(--text-primary);
+            font-size: 1rem; font-weight: 600;
+            padding: 1.2rem 0;
+            text-align: left;
+            display: flex; justify-content: space-between; align-items: center;
+            transition: color 0.2s;
+        }
+        .faq-question:hover { color: var(--accent-red); }
+        .faq-icon {
+            font-size: 1.5rem; color: var(--text-muted);
+            transition: transform 0.3s;
+            flex-shrink: 0; margin-left: 1rem;
+        }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-item.open .faq-answer { max-height: 300px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; }
+
+        /* ========== FINAL CTA ========== */
+        .final-cta {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-glass);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .final-cta::before {
+            content: '';
+            position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(239,68,68,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .final-cta .section-title { position: relative; z-index: 1; }
+        .final-cta .section-sub { position: relative; z-index: 1; margin: 0 auto 2rem; }
+        .final-cta .hero-ctas { justify-content: center; position: relative; z-index: 1; }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-glass);
+            padding: 3rem 0 1.5rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 768px) {
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+        }
+        .footer-brand .logo { margin-bottom: 1rem; display: inline-block; }
+        .footer-brand p { color: var(--text-secondary); font-size: 0.9rem; max-width: 300px; line-height: 1.7; }
+        .footer-col h4 {
+            font-size: 0.8rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: var(--text-secondary); font-size: 0.9rem; transition: color 0.2s; }
+        .footer-col a:hover { color: var(--accent-red); }
+        .footer-bottom {
+            border-top: 1px solid var(--border-glass);
+            padding-top: 1.5rem;
+            display: flex; flex-wrap: wrap;
+            justify-content: space-between; align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem; color: var(--text-muted);
+        }
+        .footer-bottom a { color: var(--text-muted); transition: color 0.2s; }
+        .footer-bottom a:hover { color: var(--text-primary); }
+
+        /* ========== SCROLL TO TOP ========== */
+        .scroll-top {
+            position: fixed; bottom: 2rem; right: 2rem;
+            width: 48px; height: 48px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 1.2rem;
+            opacity: 0; visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            z-index: 90;
+            box-shadow: 0 4px 20px var(--accent-red-glow);
+        }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 600px) {
+            .pricing-card { padding: 2rem 1.5rem; }
+            .order-card { padding: 1.5rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .templates-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .urgency-inner { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" role="banner">
+        <span>
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Flash Sale: <strong>$40 Landing Pages</strong> — Only <strong id="spots-counter">7</strong> spots left this week
+        </span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="logo" aria-label="ProPage Design Home">ProPage<span>.</span></a>
+            <a href="#order" class="nav-cta">Get Your Page →</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        Trusted by 200+ businesses
+                    </div>
+                    <h1 class="hero-title">
+                        Get a <span class="highlight">Professional Landing Page</span> for Just <span class="strikethrough">$97</span> $40
+                    </h1>
+                    <p class="hero-sub">
+                        Stop losing customers to a bad website. We build stunning, mobile-ready landing pages that turn visitors into paying customers — delivered in 48 hours.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#order" class="btn-primary">
+                            <span>Get My Page Now — $40</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#templates" class="btn-secondary">See Templates</a>
+                    </div>
+                    <div class="hero-social-proof">
+                        <div class="proof-item">
+                            <span class="icon" aria-hidden="true">⚡</span>
+                            <span><strong>48hr</strong> delivery</span>
+                        </div>
+                        <div class="proof-item">
+                            <span class="icon" aria-hidden="true">💰</span>
+                            <span><strong>100%</strong> money-back</span>
+                        </div>
+                        <div class="proof-item">
+                            <span class="icon" aria-hidden="true">📱</span>
+                            <span><strong>Mobile</strong> optimized</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <img
+                            src="/assets/img/coach.jpg"
+                            alt="Professional landing page preview for a coaching business"
+                            class="hero-card-img"
+                            loading="eager"
+                        >
+                        <div class="hero-card-bar">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="floating-badge" aria-label="Today only price">$40 TODAY</div>
+                    <div class="floating-badge-2">
+                        <span class="check" aria-hidden="true">✓</span>
+                        Delivered in 48 hours
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Urgency Timer Bar -->
+    <div class="urgency-bar" role="complementary" aria-label="Limited time offer countdown">
+        <div class="container">
+            <div class="urgency-inner">
+                <div class="spots-left">
+                    <span class="pulse-dot" aria-hidden="true"></span>
+                    Only <strong id="spots-counter-2">7</strong> spots left
+                </div>
+                <div class="urgency-timer" aria-label="Countdown timer">
+                    <div class="timer-block">
+                        <span class="num" id="timer-hours" aria-label="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <span style="font-size:1.3rem;color:var(--text-muted)">:</span>
+                    <div class="timer-block">
+                        <span class="num" id="timer-minutes" aria-label="minutes">00</span>
+                        <span class="label">Mins</span>
+                    </div>
+                    <span style="font-size:1.3rem;color:var(--text-muted)">:</span>
+                    <div class="timer-block">
+                        <span class="num" id="timer-seconds" aria-label="seconds">00</span>
+                        <span class="label">Secs</span>
+                    </div>
+                </div>
+                <p class="urgency-text">
+                    Price goes up to <strong>$97</strong> when the timer hits zero
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof Counter -->
+    <div class="social-counter" aria-label="Social proof statistics">
+        <div class="container">
+            <div class="counter-row">
+                <div class="counter-item">
+                    <div class="counter-num" id="counter-pages">47</div>
+                    <div class="counter-label">Pages delivered this month</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-num">200+</div>
+                    <div class="counter-label">Happy businesses</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-num">4.9★</div>
+                    <div class="counter-label">Average rating</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-num">48hr</div>
+                    <div class="counter-label">Average delivery</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- What You Get -->
+        <section id="features" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ What You Get</div>
+                    <h2 class="section-title" id="features-title">Everything You Need to Launch Online</h2>
+                    <p class="section-sub">Not just a template. A custom-crafted landing page designed to convert visitors into customers.</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🎨</div>
+                        <h3>Custom Design</h3>
+                        <p>Professionally designed to match your brand. No cookie-cutter templates — every page is unique.</p>
+                    </article>
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">📱</div>
+                        <h3>Mobile-First</h3>
+                        <p>Looks stunning on every device. Over 60% of your visitors are on mobile — we make sure they convert.</p>
+                    </article>
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized for speed. Pages load in under 2 seconds, keeping visitors engaged and improving SEO.</p>
+                    </article>
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🔍</div>
+                        <h3>SEO Optimized</h3>
+                        <p>Built with proper meta tags, structured data, and semantic HTML so Google loves your page.</p>
+                    </article>
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🎯</div>
+                        <h3>Conversion Focused</h3>
+                        <p>Strategic layout, clear CTAs, and persuasive copy structure designed to maximize signups and sales.</p>
+                    </article>
+                    <article class="feature-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">💬</div>
+                        <h3>Direct Support</h3>
+                        <p>Direct line to your designer. Revisions included. We don't stop until you're 100% satisfied.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" style="background:var(--bg-secondary); border-top:1px solid var(--border-glass); border-bottom:1px solid var(--border-glass);" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ How It Works</div>
+                    <h2 class="section-title" id="how-title">Get Online in 3 Simple Steps</h2>
+                    <p class="section-sub">No complicated process. No weeks of waiting. Just fast, professional results.</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-card fade-in">
+                        <div class="step-number">1</div>
+                        <span class="step-connector" aria-hidden="true">→</span>
+                        <h3>Fill Out the Form</h3>
+                        <p>Tell us about your business, your style preferences, and what you want to achieve. Takes 2 minutes.</p>
+                    </div>
+                    <div class="step-card fade-in">
+                        <div class="step-number">2</div>
+                        <span class="step-connector" aria-hidden="true">→</span>
+                        <h3>We Design & Build</h3>
+                        <p>Our team crafts your custom landing page. You'll receive a preview within 48 hours.</p>
+                    </div>
+                    <div class="step-card fade-in">
+                        <div class="step-number">3</div>
+                        <h3>Launch & Grow</h3>
+                        <p>We deploy your page and hand you the keys. Start driving traffic and watching conversions roll in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template Previews -->
+        <section id="templates" aria-labelledby="templates-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ Template Gallery</div>
+                    <h2 class="section-title" id="templates-title">Examples of Our Work</h2>
+                    <p class="section-sub">Here's a taste of what we can create for your business. Every page is customized to your brand.</p>
+                </div>
+                <div class="templates-grid">
+                    <article class="template-card fade-in">
+                        <div class="template-img-wrap">
+                            <img src="/assets/img/coach.jpg" alt="Landing page design for a life coaching business" loading="lazy">
+                            <span class="template-tag">Coaching</span>
+                        </div>
+                        <div class="template-info">
+                            <h3>Life Coach Pro</h3>
+                            <p>High-converting page for coaches and consultants</p>
+                        </div>
+                    </article>
+                    <article class="template-card fade-in">
+                        <div class="template-img-wrap">
+                            <img src="/assets/img/restaurant.jpg" alt="Landing page design for a restaurant business" loading="lazy">
+                            <span class="template-tag">Restaurant</span>
+                        </div>
+                        <div class="template-info">
+                            <h3>Bistro Elegance</h3>
+                            <p>Appetizing design that drives reservations</p>
+                        </div>
+                    </article>
+                    <article class="template-card fade-in">
+                        <div class="template-img-wrap">
+                            <img src="/assets/img/dentist.jpg" alt="Landing page design for a dental practice" loading="lazy">
+                            <span class="template-tag">Healthcare</span>
+                        </div>
+                        <div class="template-info">
+                            <h3>Smile Dental</h3>
+                            <p>Trust-building design for medical practices</p>
+                        </div>
+                    </article>
+                    <article class="template-card fade-in">
+                        <div class="template-img-wrap">
+                            <img src="/assets/img/lawyer.jpg" alt="Landing page design for a law firm" loading="lazy">
+                            <span class="template-tag">Legal</span>
+                        </div>
+                        <div class="template-info">
+                            <h3>Justice Legal</h3>
+                            <p>Professional design that establishes authority</p>
+                        </div>
+                    </article>
+                    <article class="template-card fade-in">
+                        <div class="template-img-wrap">
+                            <img src="/assets/img/corporate.jpg" alt="Landing page design for a corporate business" loading="lazy">
+                            <span class="template-tag">Corporate</span>
+                        </div>
+                        <div class="template-info">
+                            <h3>Corporate Elite</h3>
+                            <p>Clean, modern design for B2B companies</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing-section" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ Simple Pricing</div>
+                    <h2 class="section-title" id="pricing-title">One Price. No Surprises.</h2>
+                    <p class="section-sub">No hidden fees. No monthly subscriptions. Just a stunning landing page for a one-time price.</p>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-ribbon" aria-hidden="true">Today Only</div>
+                    <div class="pricing-label">Professional Landing Page</div>
+                    <div class="pricing-was" aria-label="Regular price $97">$97</div>
+                    <div class="pricing-now"><span class="currency">$</span>40</div>
+                    <div class="pricing-today">Today only — price goes up to $97 tomorrow</div>
+                    <ul class="pricing-features">
+                        <li><span class="check" aria-hidden="true">✓</span> Custom-designed landing page</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Mobile-responsive design</li>
+                        <li><span class="check" aria-hidden="true">✓</span> SEO optimization included</li>
+                        <li><span class="check" aria-hidden="true">✓</span> 48-hour delivery</li>
+                        <li><span class="check" aria-hidden="true">✓</span> 2 rounds of revisions</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Fast-loading, optimized code</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Contact form integration</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Social media links</li>
+                    </ul>
+                    <a href="#order" class="btn-primary" style="width:100%;justify-content:center;">
+                        <span>Get Your Page — $40</span>
+                    </a>
+                    <div class="guarantee-badge">
+                        🛡️ 100% Money-Back Guarantee
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section id="order" class="order-section" aria-labelledby="order-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ Get Started</div>
+                    <h2 class="section-title" id="order-title">Order Your Landing Page</h2>
+                    <p class="section-sub">Fill out the form below, complete payment, and we'll start building your page immediately.</p>
+                </div>
+                <div class="order-card fade-in">
+                    <form id="order-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Full Name *</label>
+                                <input type="text" id="full-name" name="full_name" placeholder="John Smith" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@business.com" required aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-name">Business Name *</label>
+                            <input type="text" id="business-name" name="business_name" placeholder="Your Business LLC" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="business-type">Business Type</label>
+                            <select id="business-type" name="business_type">
+                                <option value="">Select your industry...</option>
+                                <option value="coaching">Coaching / Consulting</option>
+                                <option value="restaurant">Restaurant / Food</option>
+                                <option value="healthcare">Healthcare / Dental</option>
+                                <option value="legal">Legal / Law Firm</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="fitness">Fitness / Gym</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="retail">Retail / E-Commerce</option>
+                                <option value="corporate">Corporate / B2B</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="website-url">Current Website (if any)</label>
+                            <input type="url" id="website-url" name="website_url" placeholder="https://yourbusiness.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Tell Us About Your Page *</label>
+                            <textarea id="description" name="description" placeholder="What's the main goal? (e.g., get more calls, sell a product, collect emails). Any color preferences? Links to pages you like?" required aria-required="true"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="template-choice">Preferred Style</label>
+                            <select id="template-choice" name="template_choice">
+                                <option value="">Choose a starting point...</option>
+                                <option value="modern">Modern & Minimal</option>
+                                <option value="bold">Bold & Energetic</option>
+                                <option value="elegant">Elegant & Professional</option>
+                                <option value="creative">Creative & Unique</option>
+                                <option value="trust">Trust & Authority</option>
+                                <option value="surprise">Surprise Me</option>
+                            </select>
+                        </div>
+
+                        <div style="text-align:center; margin: 1.5rem 0 0.5rem;">
+                            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">Complete payment below to submit your order</p>
+                        </div>
+
+                        <!-- PayPal Button Container -->
+                        <div id="paypal-button-container" role="region" aria-label="PayPal payment"></div>
+
+                        <p class="form-note">
+                            <span class="lock-icon" aria-hidden="true">🔒</span>
+                            Secure payment via PayPal. We never store your card details.
+                        </p>
+                    </form>
+
+                    <!-- Confirmation Message -->
+                    <div class="confirmation-message" id="confirmation-message">
+                        <div class="success-icon" aria-hidden="true">🎉</div>
+                        <h3>Order Received!</h3>
+                        <p>Thank you! We've received your payment and details. Check your email for a confirmation — we'll start building your page within 2 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ Testimonials</div>
+                    <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+                    <p class="section-sub">Don't take our word for it. Here's what business owners are saying about their new landing pages.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="testimonial-text">"I was skeptical at $40 but the quality blew me away. My new landing page looks better than the $2,000 site I had before. Bookings went up 40% in the first week."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">SK</div>
+                            <div>
+                                <div class="testimonial-name">Sarah K.</div>
+                                <div class="testimonial-role">Fitness Coach, Austin TX</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">↑ 40% more bookings</div>
+                    </article>
+                    <article class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="testimonial-text">"Delivered in 24 hours — half the promised time! The design was spot-on from the first draft. I've already referred three other business owners."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">MR</div>
+                            <div>
+                                <div class="testimonial-name">Marcus R.</div>
+                                <div class="testimonial-role">Restaurant Owner, Miami FL</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">↑ 3 referrals sent</div>
+                    </article>
+                    <article class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+                        <p class="testimonial-text">"As a dentist, I needed something professional and trustworthy. They nailed it. Patients now comment on how good my website looks. Best $40 I've ever spent."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">DL</div>
+                            <div>
+                                <div class="testimonial-name">Dr. Lisa P.</div>
+                                <div class="testimonial-role">Dental Practice, Chicago IL</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">↑ 25% more inquiries</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" style="background:var(--bg-secondary); border-top:1px solid var(--border-glass); border-bottom:1px solid var(--border-glass);" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-tag">✦ FAQ</div>
+                    <h2 class="section-title" id="faq-title">Got Questions?</h2>
+                    <p class="section-sub">Here are the most common questions we get. Still have one? Email us anytime.</p>
+                </div>
+                <div class="faq-list fade-in">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What exactly do I get for $40?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>You get a fully custom-designed, mobile-responsive landing page with SEO optimization, fast loading speed, a contact form, and social media links. This includes 2 rounds of revisions and delivery within 48 hours. It's everything you need to have a professional online presence.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Why is it only $40 when others charge $500+?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>We've streamlined our process to be incredibly efficient. We use proven design frameworks, have a rapid production pipeline, and focus specifically on single landing pages (not full websites). This allows us to deliver agency-quality work at a fraction of the cost. We keep margins thin to build volume and reputation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Will this really be ready in 48 hours?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Yes! Most pages are delivered within 24 hours. The 48-hour window is our maximum guarantee. Once you submit your details and payment, we start immediately. You'll receive a preview link to review, and after your feedback, we deliver the final version.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What if I don't like the design?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>You get 2 rounds of revisions included at no extra cost. If you're still not happy after revisions, we offer a 100% money-back guarantee. No questions asked. We're confident you'll love it, but we want you to feel completely safe ordering.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need to provide hosting or a domain?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>We deliver the completed HTML page to you. You can host it anywhere — your own server, Netlify, Vercel, GitHub Pages, or any web host. If you need help with hosting, we can guide you through free hosting options. We can also help you set up a custom domain if needed.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is my payment secure?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Absolutely. Payments are processed through PayPal, one of the world's most trusted payment platforms. We never see or store your credit card information. Your transaction is encrypted and protected by PayPal's buyer protection program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta" aria-labelledby="final-cta-title">
+            <div class="container" style="padding-top:var(--section-pad); padding-bottom:var(--section-pad);">
+                <div class="section-header">
+                    <h2 class="section-title" id="final-cta-title">Don't Let Another Day Pass Without a Professional Online Presence</h2>
+                    <p class="section-sub">Every day without a landing page is a day you're losing customers to competitors who have one. Lock in the $40 price before it's gone.</p>
+                </div>
+                <div class="hero-ctas" style="justify-content:center;">
+                    <a href="#order" class="btn-primary">
+                        <span>Get My Landing Page — $40</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:2rem;">
+                    <div class="proof-item">
+                        <span class="icon" aria-hidden="true">🛡️</span>
+                        <span>100% Money-Back Guarantee</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="icon" aria-hidden="true">⚡</span>
+                        <span>48-Hour Delivery</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="icon" aria-hidden="true">🔒</span>
+                        <span>Secure PayPal Payment</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="ProPage Design Home">ProPage<span>.</span></a>
+                    <p>Professional landing pages for small businesses. Fast, affordable, and designed to convert visitors into customers.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#templates">Templates</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></li>
+                        <li><a href="#faq">Help Center</a></li>
+                        <li><a href="#order">Place Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 ProPage Design. All rights reserved.</span>
+                <span>
+                    <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a> &nbsp;·&nbsp; <a href="#">Refund Policy</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD" async></script>
+
+    <script>
+    (function() {
+        'use strict';
+
+        // ========== COUNTDOWN TIMER (resets daily at midnight) ==========
+        function getTimeUntilMidnight() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            return tomorrow - now;
+        }
+
+        function updateTimer() {
+            const diff = getTimeUntilMidnight();
+            const h = Math.floor(diff / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            document.getElementById('timer-hours').textContent = String(h).padStart(2, '0');
+            document.getElementById('timer-minutes').textContent = String(m).padStart(2, '0');
+            document.getElementById('timer-seconds').textContent = String(s).padStart(2, '0');
+        }
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+        // ========== FADE-IN ON SCROLL ==========
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function(el) {
+            observer.observe(el);
+        });
+
+        // ========== FAQ ACCORDION ==========
+        document.querySelectorAll('.faq-question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const item = this.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(function(faq) {
+                    faq.classList.remove('open');
+                    faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                // Toggle current
+                if (!isOpen) {
+                    item.classList.add('open');
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // ========== SCROLL TO TOP ==========
+        var scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== DYNAMIC SPOTS COUNTER ==========
+        function updateSpots() {
+            var spots = Math.floor(Math.random() * 3) + 5; // 5-7
+            var el1 = document.getElementById('spots-counter');
+            var el2 = document.getElementById('spots-counter-2');
+            if (el1) el1.textContent = spots;
+            if (el2) el2.textContent = spots;
+        }
+        // Update every 5-10 minutes
+        setInterval(updateSpots, 300000 + Math.random() * 300000);
+
+        // ========== PAGE DELIVERED COUNTER ==========
+        var pagesDelivered = 47;
+        setInterval(function() {
+            if (Math.random() > 0.7) {
+                pagesDelivered++;
+                var el = document.getElementById('counter-pages');
+                if (el) el.textContent = pagesDelivered;
+            }
+        }, 120000); // every 2 minutes
+
+        // ========== PAYPAL INTEGRATION ==========
+        function initPayPal() {
+            if (typeof paypal === 'undefined') {
+                // Retry after a delay if SDK hasn't loaded
+                setTimeout(initPayPal, 1000);
+                return;
+            }
+
+            paypal.Buttons({
+                style: {
+                    layout: 'vertical',
+                    color: 'gold',
+                    shape: 'rect',
+                    label: 'pay',
+                    height: 50
+                },
+                createOrder: function(data, actions) {
+                    // Validate form first
+                    var form = document.getElementById('order-form');
+                    var name = document.getElementById('full-name').value.trim();
+                    var email = document.getElementById('email').value.trim();
+                    var business = document.getElementById('business-name').value.trim();
+                    var desc = document.getElementById('description').value.trim();
+
+                    if (!name || !email || !business || !desc) {
+                        alert('Please fill in all required fields before proceeding to payment.');
+                        return;
+                    }
+                    if (!email.includes('@') || !email.includes('.')) {
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+
+                    return actions.order.create({
+                        purchase_units: [{
+                            description: 'Professional Landing Page Design',
+                            amount: { value: '40.00' }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        // Hide form, show confirmation
+                        document.getElementById('order-form').style.display = 'none';
+                        document.getElementById('confirmation-message').style.display = 'block';
+                        // Scroll to confirmation
+                        document.getElementById('confirmation-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    });
+                },
+                onError: function(err) {
+                    console.error('PayPal error:', err);
+                    alert('Something went wrong with the payment. Please try again or contact us at hello@yourdomain.com');
+                }
+            }).render('#paypal-button-container');
+        }
+
+        // Wait for PayPal SDK to load
+        if (typeof paypal !== 'undefined') {
+            initPayPal();
+        } else {
+            window.addEventListener('load', function() {
+                setTimeout(initPayPal, 500);
+            });
+        }
+
+        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+    })();
+    </script>
+
+</body>
+</html>
